@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;  
+}
+
+body{
+    font-size: 16px;
+    color: #333;
+    background-color: #a1c3ff;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color:#3474e6;
+    height: 60px;
+}
+nav .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #0151cc;
+}
+header{
+    background-color: #0151cc;
+    color: #fff;
+    min-height: 400px;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+header p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxes .box{
+    background-color:#0151cc;
+    color: #fff;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgb(0,0,0, 0.6);
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+footer{
+    background-color:#0151cc;
+    text-align: center;
+    color: #fff;
+    height: 60px;
+    padding-top: 25px;
+}
+
+.about .container{
+    display: flex;
+}
+.about .who-we-are{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about .who-we-are img, .about .what-we-do img{
+    max-width: 350px;
+}
+.about .what-we-do{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:768px){
+    nav{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    nav .container{
+        flex-direction: column;
+    }
+    nav .container .logo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header .container{
+        flex-direction: column;
+    }
+    header .container div{
+        text-align: center;
+    }
+    header .container img{
+        width: 50%;
+    }
+    .boxes .container{
+        flex-direction: column;
+    }
+    .boxes .box{
+        text-align: center;
+    }
+
+    .about .container{
+        flex-direction: column;
+    }
+    .about .container .who-we-are{
+        order: 2;
+    }
+}
